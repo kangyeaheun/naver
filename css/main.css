@@ -1,7 +1,8 @@
 /* common */
 *{
     padding:0;
-    margin:0;
+    margin:0 ;
+
 }
 
 html {
@@ -35,6 +36,7 @@ a { text-decoration: none;
     min-width: 1190px;
 }
 
+hr { height:3px;color:#dae1e6; background-color: #dae1e6;}
 /* 상단 다크모드배너 */
 /* .topbanner {
     width: 100vw;
@@ -78,7 +80,7 @@ a { text-decoration: none;
 .sevice_area .happybean, .sevice_area .happybean:hover,
 .ico_mail,.ico_shoplive, .ico_tv, .more_btn::after, 
 #newsstand_header .issue_area a::after, .ico_naver, .sub_area .findbox::before,
-.joinin a::before  
+.joinin a::before, .btn_arrowleft, .btn_arrowright
 {
     display: inline-block;
     background-image: url('../imgs/sp_main_4efc7a.png');
@@ -86,6 +88,18 @@ a { text-decoration: none;
     background-repeat: no-repeat;
 
 }
+
+.ico_n, .ico_arrowright, .btn_next, .btn_prev
+    
+    {
+    display: inline-block;
+    background-image: url('../imgs/sp_shop_bffdc9.png');
+    background-size: 107px 78px;
+    background-repeat: no-repeat;
+}
+
+
+
 
 /*  검색창  */
 header .speacial_bg {
@@ -518,3 +532,295 @@ header .speacial_bg {
     content: '';
     margin: 2px 5px 0 0;  
 }
+
+.banner2, .banner2 img {
+    height:200px; 
+    width:350px; 
+    /* background-color: #c4c4c4; */
+}
+
+.trendshopping {
+    height:44px; 
+    width:350px; 
+    background-color:#ffffff;
+    padding:12px 0 13px;
+    display:flex;justify-content: space-between;
+    align-items: center;
+}
+
+.trendshopping > div {
+    display: flex;
+    font-weight: bold;
+}
+
+.trendshopping > div > a > p:hover {
+text-decoration: underline;
+}
+
+.ico_n{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-position: -26px -54px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin-right: 4px;
+    vertical-align: -3px;
+}
+
+.ico_arrowright {
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -43px -54px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin-left: 7px;
+    vertical-align: 0; 
+}
+
+.trendshopping .categories {
+    width:120px; height:19px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.btn_arrowright {
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    background-position: -289px -337px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 7px 8px 6px;
+    
+
+}
+
+.btn_arrowleft {
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    background-position: -438px -385px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 7px 8px 6px;
+}
+
+input[type="radio"]:checked + label {
+color:#19ce60;
+width:100%;
+border-bottom:2px solid #03c75a;
+/* position: relative; */
+}
+/* input[type="radio"]:checked + label::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom:2px;
+    left:1px
+    background-color:#03c75a;
+    } */
+
+.font_green {
+ display:none;
+}
+.font_bold{
+    font-weight: bold;
+}
+
+.mall_group {
+    height:70px; width:350px;
+    /* padding: 12px 4px 11px 10px; */
+    background-color: #f7f9fa;
+    border : 1px solid #dae1e6;
+    display: flex; justify-content: center; 
+    align-items: center; flex-wrap: wrap; 
+}
+
+.mall_group_1st {
+    height:23px; width:334px; 
+    display: flex; justify-content: space-between; 
+    align-items: center;
+    padding-bottom:0px;
+}
+
+.mall_group_2nd {
+    height:23px; width:334px;
+    display: flex; justify-content: space-between; 
+    align-items: center;
+    padding-top:0px;
+}
+.mall_group p:hover {
+    text-decoration:underline;
+    
+}
+.dot {
+    background-color: #c9cccf;
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+/* 트렌드 쇼핑 아이템 */
+.item_warp{
+    height: 1500px; width: 350px; 
+    background-color: #fff;
+    border : 1px solid #dae1e6;
+    letter-spacing: -.25px; 
+}
+
+.item_slider {
+    height: 60px; width: 348px; 
+    display:flex; justify-content:flex-end;
+     align-items: center;
+}
+
+.btn_prev {
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -71px -54px;
+    vertical-align: top;
+    content: '';
+    margin: 9px 12px 9px 10px;  
+}
+.btn_next{
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -57px -54px;
+    vertical-align: top;
+    content: '';
+    margin: 9px 10px 9px 12px;  
+}
+
+.wrap_btn_prev {
+    margin-left: 10px;
+}
+.wrap_btn_next {
+    margin-right: 8px;
+}
+.wrap_btn_next , .wrap_btn_prev  { 
+    width:29px;
+    height: 29px;
+    border:1px solid #dae1e6;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.wrap_btn_next:hover, .wrap_btn_prev:hover { 
+   background-color: #f7f9fa;
+}
+
+
+
+
+.item_warp .items {
+    height:178px; width: 348px; 
+    display: flex; margin-bottom: 10px;
+}
+.item_warp .items .item {
+    height:178px; width:107.31px; 
+    display: flex; flex-direction: column;
+    margin-left:7px; 
+    overflow: hidden; 
+}
+.item_warp .items .item img{
+    height:146px; width:107.31px;  
+    overflow: hidden;
+}
+
+.thumbnail {
+    height:146px; width:107.31px;
+}
+
+.item p {height:16px; width:107.31px; text-align: center;}
+
+.item_slider2 {
+    height: 55px; width:150px; margin: 0 99px;
+    display:flex; justify-content: space-between; align-items: center;
+}
+
+/* 반갑다 쇼핑뉴스 섹션 */
+.shopping_news {
+    height:274px; width:347px; 
+}
+
+.wrap_news { 
+    height:236px; width:332px;  margin: 0 8px;
+    padding: 19px 0 17px;
+}
+.shoppingnews_header{
+    display:flex; justify-content: space-between; align-items: center;
+}
+.shoppingnews_header p {
+    font-size:13px; 
+    font-weight: bold;
+}
+
+.shoppingnews_slider{
+    display: flex; justify-content: flex-end; align-items: center;   
+}
+
+.shoppingnews_list {
+    height: 210px;
+    display: flex; flex-direction: column; 
+    justify-content: space-around; align-items: flex-start  
+}
+
+.shop_name {
+    font-weight: bold; margin-right: 10px;
+}
+.shop_name::before {
+    background-color: #1ace61;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    content: '';
+    margin-right: 8px;
+    vertical-align: 2px
+}
+
+/* 트렌트쇼핑 2 */
+.wrap_trendshopping2 {
+    height:272px; width:332px;
+    margin: 0 8px;
+    padding:55px 0 30px;
+ }
+
+
+ .tabs { 
+     display: none;
+ }
+
+ .wrap_tablist {
+    display:flex; justify-content: space-between; align-items: center; 
+ }
+
+ .wrap_tablist a label {font-weight: bold;}
+ .trendshopping2_wrap{
+
+    height: 250px; display:flex;
+    justify-content:space-between; align-items:center;
+    overflow: hidden;
+}
+
+ .trendshopping2_wrap img{height: 163px; width:163.5px; }
+ .trendshopping2_wrap p {text-align: center; font-weight: bold;}
+
+
+ /* .trendshopping2_wrap img:hover, .thumbnail:hover {
+     transform: scale(1.2);
+ } */

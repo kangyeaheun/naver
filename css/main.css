@@ -596,7 +596,8 @@ header .speacial_bg {
     display: flex; 
     flex-wrap:wrap; 
     justify-content: center; align-items:center; 
-    box-shadow: 0 0 0 1px #dae1e6 inset;
+    /* box-shadow: 0 0 0 1px #dae1e6 inset; */
+    border:1px solid #dae1e6;
 }
 
 .press {
@@ -612,6 +613,8 @@ header .speacial_bg {
 { height: 20px;
 }
 
+
+/* 오늘 읽을 만한 글 */
 .recommand {
     height: 34px; width:750px;
     padding-top: 35px;
@@ -683,6 +686,11 @@ header .speacial_bg {
     height: 12px;
     background-color: #dae1e6;;;
 }
+
+
+
+
+
 
 
 .column_fix_wrap {

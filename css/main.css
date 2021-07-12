@@ -38,7 +38,7 @@ a { text-decoration: none;
 
 hr { height:3px;color:#dae1e6; background-color: #dae1e6;}
 
-.font_green {color:#42be6f; font-size: 13px; font-weight: bold;}
+.font_purple {color:#5853a0; font-size: 13px; font-weight: bold;}
 /* 상단 다크모드배너 */
 /* .topbanner {
     width: 100vw;
@@ -722,12 +722,19 @@ header .speacial_bg {
     background-color: #dae1e6;
     position: relative; }
 
-.more_btn2{   
+.more_section {
+    height: 100px; width:750px; 
+}
+.more_btn_wrap{   
     width: 42px;
     height: 42px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
-.more_btn2 .ico_more{
+.more_btn_wrap .more_btn2 { 
+    display:flex; flex-direction: column; 
+    align-items: center; justify-content: center;
+    cursor: pointer; }
+.more_btn_wrap .ico_more {
     position: absolute;
     width:40px;
     height:38px;
@@ -738,7 +745,14 @@ header .speacial_bg {
     margin: 0 auto 3px;
     top:-16px;
     left: 360px
+}
 
+.more_btn_wrap .more {
+    position: absolute;
+    width:80px;
+    height:38px;
+    top:22px;
+    left: 342px  
 }
 
 .command {
@@ -763,8 +777,30 @@ header .speacial_bg {
 /* .issue img:hover{
     transform: scale(1.2);
 } */
-.wrap_issue .contents{height: 114px; width:580px;
+.wrap_issue .container{height: 114px; width:580px; 
+    padding:10px 20px 0 42px;
+
     }
+.wrap_issue .contents { 
+    display: block;
+    overflow: hidden;
+    max-height: 40px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 2px;
+    font-size: 13px;
+    color: #404040;
+}
+
+.wrap_issue .author {
+   display: flex; align-items:center;
+   font-size:12px;
+}
+.wrap_issue .author span{
+    margin: 0 10px
+}
 
 .column_fix_wrap {
     position: relative;
@@ -947,7 +983,7 @@ text-decoration: underline;
 }
 
 
-.font_green:checked + label , .tabs:checked + label {
+.tab_green:checked + label , .tabs:checked + label {
 color:#19ce60;
 width:100%;
 border-bottom:2px solid #03c75a;
@@ -964,7 +1000,7 @@ border-bottom:2px solid #03c75a;
     background-color:#03c75a;
     } */
 
-.font_green {
+.tab_green {
  display:none;
 }
 .font_bold{

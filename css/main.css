@@ -720,6 +720,7 @@ header .speacial_bg {
     width:750px;
     height:1px; 
     background-color: #dae1e6;
+    margin-bottom:18px;
     position: relative; }
 
 .more_section {
@@ -766,7 +767,7 @@ header .speacial_bg {
 .wrap_issue.f, .wrap_issue.g, .wrap_issue.h { 
     margin-bottom:18px;
 }
-.wrap_issue.e {margin-top:18px; margin-bottom:18px;}
+.wrap_issue.e {margin-top:18px;  margin-bottom:10px;}
 .wrap_issue.i {margin-bottom: 7px;}
 
 /* .issue a{transition: .4s;} */

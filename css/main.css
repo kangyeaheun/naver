@@ -34,6 +34,7 @@ a { text-decoration: none;
 
 #wrap {
     min-width: 1190px;
+    margin: 0 auto;
 }
 
 hr { height:3px;color:#dae1e6; background-color: #dae1e6;}
@@ -92,7 +93,7 @@ hr { height:3px;color:#dae1e6; background-color: #dae1e6;}
  .newsstand_section_b .list:checked , .newsstand_section_b .thumb, .newsstand_section_b .thumb:hover,
  .newsstand_section_b .thumb:checked,.newsstand_section_b .setting, 
  .newsstand_section_b .setting:hover, .recommand .setting div small::before,
- .more_btn2 .ico_more, .footer .notice .link_all::after, #btn_darkmode,
+ .more_btn2 .ico_more, #footer .notice .link_all::after , #btn_darkmode,
  #btn_darkmode:hover, #btn_top, #btn_top:hover {
     display: inline-block;
     background-image: url('../imgs/sp_main_4efc7a.png');
@@ -1207,8 +1208,7 @@ border-bottom:2px solid #03c75a;
     height: 422px; width:1130px; 
     background-color:#fafbfc; 
     padding:24px 37px 92px; 
-    margin: 20px 30px 0 ; 
-    display: inline-block;   
+    margin: 20px auto 0; 
     border-top: 1px solid #dae1e6;
 }
 
@@ -1241,7 +1241,7 @@ border-bottom:2px solid #03c75a;
     padding-top: 40px;
 }
 
-.footer .notice {
+#footer .notice {
     padding-top:16px;
    padding-left: 8px;
     height: 32px; width: 1130px;  
@@ -1251,7 +1251,7 @@ border-bottom:2px solid #03c75a;
     border-bottom: 1px solid #dae1e6;
 
 }
-.footer .notice .link_all::after {
+#footer .notice .link_all::after {
     display: inline-block;
     width: 8px;
     height: 12px;
@@ -1261,7 +1261,7 @@ border-bottom:2px solid #03c75a;
     margin-left: 10px;
     vertical-align: -2px;
 }
-.footer .notice a:hover {
+#footer .notice a:hover {
     text-decoration: underline;
 }
 

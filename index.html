@@ -433,11 +433,11 @@
                         </div>
                         <div class="btn_area">
                             <div class="wrap_btn">
-                                <div class="btn_arrowleft"></div>
+                                <div class="btn_prev"></div>
                             </div>
 
                             <div class="wrap_btn">
-                                <div class="btn_arrowright"></div>
+                                <div class="btn_next"></div>
                             </div>
 
                         </div>
@@ -640,11 +640,12 @@
                         </div>
 
                         <!-- 트렌스 쇼핑 끝 -->
-                        <hr style="width: 340px; ">
-                        <!--가운데 정렬하시오  -->
+                        <div class="hr" style="width: 340px; margin: 0 auto;"></div>
+                        <!-- <hr style=" width: 340px; "> -->
+
 
                         <!-- 반갑다 쇼핑뉴스 시작 -->
-                        <div class="shopping_news">
+                        <div class=" shopping_news">
 
 
                             <div class="wrap_news">
@@ -674,7 +675,7 @@
 
                         </div>
                         <!-- 반갑다 쇼핑뉴스 끝 -->
-                        <hr>
+                        <div class="hr" style="width: 340px; margin: 0 auto;"></div>
                         <!-- 트렌드쇼핑 컨텐츠-2 -->
 
 
@@ -694,7 +695,9 @@
                                 </a>
                                 <a href="">
                                     <input type="radio" name="trendshopping2_tab" id="tab_4" class="tabs" />
-                                    <label for="tab_4">디지털 레져</label>
+                                    <label for="tab_4">디지털 <span class="dot"
+                                            style="vertical-align: middle; color:black"></span>
+                                        레져</label>
                                 </a>
                                 <div class="shoppingnews_slider">
                                     <div> 1 / 6 </div>
@@ -735,7 +738,11 @@
     </div>
 
 
-    <div class="footer">
+
+
+
+    </main>
+    <div id="footer">
 
         <div class="footer_inner_top">
             <div class="wrap_img">
@@ -781,37 +788,69 @@
         <!-- <div style="height: 15px; width: 1130px; background-color: #dff8cb;"></div>
         <div style="height: 20px; width: 1130px; background-color: #dff8cb;"></div> -->
         <div class="footer_inner_mid">
-            <div class="partner_wrap"></div>
+            <div class="partner_wrap">
+                <div class="creators">
+                    <h3>Creators</h3>
+                    <a href="" class="item">크리에이터</a>
+                    <a href="">스몰비지니스</a>
+                </div>
+                <div class="partners">
+                    <h3>Partners</h3>
+                    <a href="" class="item">SME 풀케어 시스템</a>
+                    <a href="" class="item">비즈니스 광고 </a>
+                    <a href="" class="item">스토어개설 </a>
+                    <a href="" class="item">지역업체 등록 </a>
+                    <a href="">엑스퍼트 등록</a>
+                </div>
+                <div class="developers">
+                    <h3>Developers</h3>
+                    <a href="" class="item">네이버 개발자 센터</a>
+                    <a href="" class="item">오픈 API</a>
+                    <a href="" class="item">오픈소스</a>
+                    <a href="" class="item">네이버 D2</a>
+                    <a href="" class="item">네이버 D2SF</a>
+                    <a href="">네이버 랩스</a>
+                </div>
+            </div>
             <div class="service_wrap">
                 <div class="whale">
-                    <div class="service_info">
+                    <a href="">
+                        <div class="service_info">
+                            <p class="font_bold">웨일 브라우저</p>
+                            <p class="font_gray">다운받기</p>
+                        </div>
                         <img src="./imgs/shop/whale.png" alt="">
-                    </div>
+                    </a>
                 </div>
-                <div class="flower"><img src="./imgs/shop/flower.png" alt=""></div>
+                <div class="flower">
+                    <a href="">
+                        <div class="service_info">
+                            <p class="font_bold">프로젝트 꽃</p>
+                            <p class="font_gray">바로가기</p>
+                        </div>
+                        <img src="./imgs/shop/flower.png" alt="">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="corp_wrap">
             <ul class="corp_area">
-                <li class="corp_item"><a href="">회사소개</a></li>
-                <li class="corp_item"><a href="">인재채용</a></li>
-                <li class="corp_item"><a href="">제휴제안</a></li>
-                <li class="corp_item"><a href="">이용약관</a></li>
-                <li class="corp_item"><a href=""><span class="font_bold">개인정보처리방침</span></a></li>
-                <li class="corp_item"><a href="">청소년보호정책</a></li>
-                <li class="corp_item"><a href="">네이버 정책</a></li>
-                <li class="corp_item"><a href="">고객센터</a></li>
+                <li class="corp_item"><a href="" class="font_gray">회사소개</a></li>
+                <li class="corp_item"><a href="" class="font_gray">인재채용</a></li>
+                <li class="corp_item"><a href="" class="font_gray">제휴제안</a></li>
+                <li class="corp_item"><a href="" class="font_gray">이용약관</a></li>
+                <li class="corp_item"><a href="" class="font_gray"><span class="font_bold">개인정보처리방침</span></a></li>
+                <li class="corp_item"><a href="" class="font_gray">청소년보호정책</a></li>
+                <li class="corp_item"><a href="" class="font_gray">네이버 정책</a></li>
+                <li class="corp_item"><a href="" class="font_gray">고객센터</a></li>
                 <li class="corp_item"><a href=""><span class="navercorp">&copy; NAVER Corp.</span></a></li>
             </ul>
         </div>
 
     </div>
 
-    </div>
-    </div>
-
-    </main>
-    </div>
+    <button id="btn_darkmode"></button>
+    <button id="btn_top"></button>
 </body>
 
 </html>
